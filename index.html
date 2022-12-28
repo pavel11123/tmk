@@ -72,18 +72,33 @@
           <span></span>
         </div>
         <div class="header__mobile">
-          <nav class="header__nav-mobile d-fl-col">
-            <ul class="d-fl-col">
-              <li><a href="/">О нас</a></li>
-              <li><a href="/">Мы предлагаем</a></li>
-              <li><a href="/">Условия</a></li>
-              <li><a href="/">Направления</a></li>
-              <li><a href="/">Этапы</a></li>
-              <li><a href="/">Команда</a></li>
-              <li><a href="/">Частые вопросы</a></li>
-              <li><a href="/">Новости</a></li>
-            </ul>
-          </nav>
+          <div class="header__mobile-wrapper d-fl-col">
+            <nav class="header__nav-mobile d-fl-col">
+              <ul class="d-fl-col">
+                <li><a href="/">О нас</a></li>
+                <li><a href="/">Мы предлагаем</a></li>
+                <li><a href="/">Условия</a></li>
+                <li><a href="/">Направления</a></li>
+                <li><a href="/">Этапы</a></li>
+                <li><a href="/">Команда</a></li>
+                <li><a href="/">Частые вопросы</a></li>
+                <li><a href="/">Новости</a></li>
+              </ul>
+            </nav>
+
+            <div class="header__nav-mobile-bottom d-fl">
+              <div class="header__logo">
+                <img src="main/img/icon/tmkLogo.svg" alt="logo" />
+              </div>
+
+              <a
+                class="accelerator__btn header__accelerator btn__animation-orange"
+                href="/"
+                >Акселератор</a
+              >
+              <div style="width: 40px"></div>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -949,7 +964,10 @@
         </div>
 
         <section class="section__info">
-          <div class="info__block"></div>
+          <video preload="auto" autoplay muted loop class="start__video">
+            <source type="video/mp4" src="main/video/TMK-R&D-03-Film.mp4" />
+          </video>
+          <div class="start__video-back"></div>
         </section>
       </main>
 
