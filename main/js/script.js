@@ -22,7 +22,7 @@ const slider = () => {
           },
         },
         {
-          breakpoint: 480,
+          breakpoint: 580,
           settings: {
             slidesToShow: 1,
           },

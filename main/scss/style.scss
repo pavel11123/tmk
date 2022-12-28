@@ -1258,10 +1258,15 @@ $fontArial: "Arial";
   height: rem(15);
   cursor: pointer;
 
-  @media (max-width: 900px) {
+  @media (max-width: 899px) {
     background: url("../../main/img/icon/arrow-slider-mobile.svg") 0 0 / 100%
       no-repeat;
     height: rem(30);
+    top: clamp(rem(30), 16.69vw, rem(150));
+  }
+
+  @media (max-width: 579px) {
+    top: clamp(rem(50), 34.54vw, rem(200));
   }
 }
 .slider .slick-arrow.slick-disabled {
