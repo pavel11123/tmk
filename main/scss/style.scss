@@ -1902,7 +1902,7 @@ $fontArial: "Arial";
 .footer {
   background-color: #000000;
   padding: rem(85) rem(80) rem(100) rem(80);
-  display: none;
+  // display: none;
 }
 
 .footer-top {
@@ -1916,6 +1916,7 @@ $fontArial: "Arial";
   margin: 0 auto;
   text-align: center;
   gap: rem(30);
+  padding-bottom: adaptiv-num-rem(40, 135, 1920, 360);
   span,
   a {
     font-family: $fontEurope;
@@ -1935,6 +1936,11 @@ $fontArial: "Arial";
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  gap: rem(30);
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 
   &-left {
     span {
@@ -1944,15 +1950,15 @@ $fontArial: "Arial";
       line-height: rem(28);
       color: #7a7a7a;
     }
+
+    @media (max-width: 600px) {
+      order: 2;
+    }
   }
 
   &-center {
-    padding-top: rem(135);
-    & > .request__btn {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: rem(-190);
+    @media (max-width: 600px) {
+      order: 1;
     }
   }
 
@@ -1962,6 +1968,11 @@ $fontArial: "Arial";
     font-size: rem(24);
     line-height: rem(28);
     color: #7a7a7a;
+    text-align: center;
+
+    @media (max-width: 600px) {
+      order: 3;
+    }
   }
 }
 /*------------------FOOTER------------------*/
