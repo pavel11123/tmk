@@ -244,7 +244,7 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-image: url("main/img/icon/arrow-top.svg");
+  background-image: url("../../main/img/icon/arrow-top.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -677,7 +677,7 @@ body {
 /*------------------OFFERS------------------*/
 .offers__description {
   margin-top: 4.6875rem;
-  background-image: url("main/img/background/offers.png");
+  background-image: url("../../main/img/background/offers.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -978,7 +978,7 @@ body {
 /*------------------STAGES------------------*/
 .stages__block-wrapper {
   margin-top: 4.6875rem;
-  background-image: url("main/img/background/stages.png");
+  background-image: url("../../main/img/background/stages.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -987,7 +987,7 @@ body {
 @media (max-width: 529px) {
   .stages__block-wrapper {
     padding: 2.5rem 1.25rem;
-    background-image: url("main/img/background/stages-mobile.png");
+    background-image: url("../../main/img/background/stages-mobile.png");
   }
 }
 
@@ -1029,7 +1029,7 @@ body {
     display: block;
     width: 1rem;
     height: 2.8125rem;
-    background-image: url("main/img/icon/arrow-bottom.svg");
+    background-image: url("../../main/img/icon/arrow-bottom.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -1047,7 +1047,7 @@ body {
   display: block;
   width: clamp(2.8125rem, 6.88vw, 8.25rem);
   height: clamp(0.5rem, 6.88vw, 1rem);
-  background-image: url("main/img/icon/arrow.svg");
+  background-image: url("../../main/img/icon/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1216,7 +1216,7 @@ body {
 
 .slider .slick-arrow.slick-next {
   right: clamp(1.875rem, 4.43vw, 5.3125rem);
-  background: url("main/img/icon/arrow-slider.svg") 0 0/100% no-repeat;
+  background: url("../../main/img/icon/arrow-slider.svg") 0 0/100% no-repeat;
   background-position: center;
   background-size: contain;
   width: clamp(1.875rem, 5.73vw, 6.875rem);
@@ -1225,7 +1225,7 @@ body {
 }
 @media (max-width: 900px) {
   .slider .slick-arrow.slick-next {
-    background: url("main/img/icon/arrow-slider-mobile.svg") 0 0/100% no-repeat;
+    background: url("../../main/img/icon/arrow-slider-mobile.svg") 0 0/100% no-repeat;
     height: 1.875rem;
   }
 }
@@ -1547,7 +1547,7 @@ body {
 .custom-radio:checked + label::before {
   border-color: #000000;
   background-color: #d5d5d5;
-  background-image: url(main/img/icon/check.svg);
+  background-image: url(../../main/img/icon/check.svg);
 }
 
 .custom-radio:disabled + label::before {
@@ -1800,7 +1800,7 @@ body {
 /*------------------INFO------------------*/
 .info__block {
   min-height: 100vh;
-  background-image: url("main/img/background/info.png");
+  background-image: url("../../main/img/background/info.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

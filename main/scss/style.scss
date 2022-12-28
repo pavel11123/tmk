@@ -182,7 +182,7 @@ $fontArial: "Arial";
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-image: url("main/img/icon/arrow-top.svg");
+    background-image: url("../../main/img/icon/arrow-top.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -453,7 +453,7 @@ $fontArial: "Arial";
   min-height: 100vh;
   padding-top: rem(110);
   padding-bottom: rem(110);
-  // background-image: url("main/img/background/backgroundStart.png");
+  // background-image: url("../../main/img/background/backgroundStart.png");
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: center;
@@ -646,7 +646,7 @@ $fontArial: "Arial";
 }
 .offers__description {
   margin-top: rem(75);
-  background-image: url("main/img/background/offers.png");
+  background-image: url("../../main/img/background/offers.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -973,7 +973,7 @@ $fontArial: "Arial";
 
 .stages__block-wrapper {
   margin-top: rem(75);
-  background-image: url("main/img/background/stages.png");
+  background-image: url("../../main/img/background/stages.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -981,7 +981,7 @@ $fontArial: "Arial";
 
   @media (max-width: 529px) {
     padding: rem(40) rem(20);
-    background-image: url("main/img/background/stages-mobile.png");
+    background-image: url("../../main/img/background/stages-mobile.png");
   }
 }
 
@@ -1024,7 +1024,7 @@ $fontArial: "Arial";
         width: rem(16);
         height: rem(45);
 
-        background-image: url("main/img/icon/arrow-bottom.svg");
+        background-image: url("../../main/img/icon/arrow-bottom.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1048,7 +1048,7 @@ $fontArial: "Arial";
         width: clamp(rem(45), 6.88vw, rem(132));
         height: clamp(rem(8), 6.88vw, rem(16));
 
-        background-image: url("main/img/icon/arrow.svg");
+        background-image: url("../../main/img/icon/arrow.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -1223,7 +1223,7 @@ $fontArial: "Arial";
 
 .slider .slick-arrow.slick-next {
   right: clamp(rem(30), 4.43vw, rem(85));
-  background: url("main/img/icon/arrow-slider.svg") 0 0 / 100% no-repeat;
+  background: url("../../main/img/icon/arrow-slider.svg") 0 0 / 100% no-repeat;
   background-position: center;
   background-size: contain;
   width: clamp(rem(30), 5.73vw, rem(110));
@@ -1231,7 +1231,7 @@ $fontArial: "Arial";
   cursor: pointer;
 
   @media (max-width: 900px) {
-    background: url("main/img/icon/arrow-slider-mobile.svg") 0 0 / 100%
+    background: url("../../main/img/icon/arrow-slider-mobile.svg") 0 0 / 100%
       no-repeat;
     height: rem(30);
   }
@@ -1561,7 +1561,7 @@ $fontArial: "Arial";
 .custom-radio:checked + label::before {
   border-color: #000000;
   background-color: #d5d5d5;
-  background-image: url(main/img/icon/check.svg);
+  background-image: url(../../main/img/icon/check.svg);
 }
 
 .custom-radio:disabled + label::before {
@@ -1839,7 +1839,7 @@ $fontArial: "Arial";
 }
 .info__block {
   min-height: 100vh;
-  background-image: url("main/img/background/info.png");
+  background-image: url("../../main/img/background/info.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
