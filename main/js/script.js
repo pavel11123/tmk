@@ -76,7 +76,7 @@ menu__open();
 const btn__top = () => {
   function backToTop() {
     if (window.pageYOffset > 0) {
-      window.scrollBy(0, -150);
+      window.scrollBy(0, -1000);
       setTimeout(backToTop, 0);
     }
   }

@@ -104,6 +104,10 @@ body {
   background-color: #d5d5d5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .d-fl {
   display: flex;
 }
@@ -180,13 +184,16 @@ body {
   -o-transition: 0.3s;
 }
 .btn__animation-orange:hover {
-  color: #dd6f2d;
-  border: 0.125rem solid #dd6f2d;
-}
-.btn__animation-orange:active {
   color: #ffffff;
   background-color: #dd6f2d;
   border: 0.125rem solid #dd6f2d;
+}
+.btn__animation-orange:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
 
 .title__section {
@@ -520,7 +527,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   top: 0;
   left: 0;
@@ -761,8 +768,38 @@ body {
   }
 }
 
-.conditions__card {
+.conditions__card-wrapper {
+  position: relative;
+}
+.conditions__card-wrapper:hover > .conditions__card-back {
+  top: 0.625rem;
+  left: -0.625rem;
+}
+.conditions__card-wrapper:hover > .conditions__card h5,
+.conditions__card-wrapper:hover > .conditions__card p {
+  color: #dd6f2d;
+}
+.conditions__card-wrapper:hover > .conditions__card > .conditions__card-img svg {
+  fill: white;
+}
+
+.conditions__card-back {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: #dd6f2d;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.conditions__card {
+  background-color: #cbcbcb;
   position: relative;
   z-index: 0;
   padding: 1.25rem 1.5625rem 1.5625rem clamp(1.25rem, 2.08vw, 2.5rem);
@@ -771,6 +808,11 @@ body {
 .conditions__card p {
   color: #000000;
   font-weight: 400;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .conditions__card h5 {
   font-family: "EuropeC";
@@ -793,46 +835,23 @@ body {
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
 }
-.conditions__card:nth-child(1)::before, .conditions__card:nth-child(2)::before, .conditions__card:nth-child(3)::before, .conditions__card:nth-child(4)::before, .conditions__card:nth-child(5)::before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  bottom: 0.625rem;
-  background-color: #cbcbcb;
-  z-index: -1;
-}
-.conditions__card:nth-child(1)::before, .conditions__card:nth-child(2)::before {
-  left: 0.625rem;
-}
-.conditions__card:nth-child(3)::before {
-  left: 0;
-}
-@media (max-width: 1260px) {
-  .conditions__card:nth-child(3)::before {
-    left: 0.625rem;
-  }
-}
-.conditions__card:nth-child(4)::before, .conditions__card:nth-child(5)::before {
-  right: 0.625rem;
-}
-@media (max-width: 1260px) {
-  .conditions__card:nth-child(4)::before, .conditions__card:nth-child(5)::before {
-    left: 0.625rem;
-  }
-}
 
 .conditions__card-img {
   width: clamp(2.5rem, 3.85vw, 4.625rem);
   height: clamp(2.5rem, 3.85vw, 4.625rem);
   margin: 0 auto;
 }
-.conditions__card-img img {
+.conditions__card-img svg {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  fill: black;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 /*------------------CONDITIONS------------------*/

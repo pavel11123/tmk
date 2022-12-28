@@ -114,7 +114,7 @@
               на предприятиях Группы ТМК
             </h1>
             <h4>Прием заявок на участие уже открыт</h4>
-            <a href="/" class="request__btn btn__animation-orange"
+            <a href="#feedback" class="request__btn btn__animation-orange"
               >Подать заявку</a
             >
           </div>
@@ -215,45 +215,77 @@
           <h4 class="title__section">Условия</h4>
 
           <div class="conditions__card-grid">
-            <div class="conditions__card">
-              <h5>Продукт <br /><br /></h5>
-              <div class="conditions__card-img">
-                <img src="main/img/icon/icon-settings.png" alt="settings" />
+            <div class="conditions__card-wrapper d-fl">
+              <div class="conditions__card">
+                <h5>Продукт <br /><br /></h5>
+                <div class="conditions__card-img">
+                  <svg>
+                    <use xlink:href="main/sprite/icon.svg#icon-settings"></use>
+                  </svg>
+                </div>
+                <p>
+                  Наличие готового продукта (от MVP до промышленного решения)
+                </p>
               </div>
-              <p>Наличие готового продукта (от MVP до промышленного решения)</p>
+              <div class="conditions__card-back"></div>
             </div>
-            <div class="conditions__card">
-              <h5>Соответствие<br /><br /></h5>
-              <div class="conditions__card-img">
-                <img src="main/img/icon/icon-compliant.png" alt="settings" />
+
+            <div class="conditions__card-wrapper d-fl">
+              <div class="conditions__card">
+                <h5>Соответствие <br /><br /></h5>
+                <div class="conditions__card-img">
+                  <svg>
+                    <use xlink:href="main/sprite/icon.svg#icon-product"></use>
+                  </svg>
+                </div>
+                <p>Соответствие продукта заявленным направлениям</p>
               </div>
-              <p>Соответствие продукта заявленным направлениям</p>
+              <div class="conditions__card-back"></div>
             </div>
-            <div class="conditions__card">
-              <h5>Готовность<br /><br /></h5>
-              <div class="conditions__card-img">
-                <img src="main/img/icon/icon-checkmark.png" alt="settings" />
+
+            <div class="conditions__card-wrapper d-fl">
+              <div class="conditions__card">
+                <h5>Готовность <br /><br /></h5>
+                <div class="conditions__card-img">
+                  <svg>
+                    <use xlink:href="main/sprite/icon.svg#icon-checmark"></use>
+                  </svg>
+                </div>
+                <p>Готовность пилотирования решения в группу компаний ТМК</p>
               </div>
-              <p>Готовность пилотирования решения в группу компаний ТМК</p>
+              <div class="conditions__card-back"></div>
             </div>
-            <div class="conditions__card">
-              <h5>Личное участие</h5>
-              <div class="conditions__card-img">
-                <img src="main/img/icon/icon-hands.png" alt="settings" />
+
+            <div class="conditions__card-wrapper d-fl">
+              <div class="conditions__card">
+                <h5>Личное участие</h5>
+                <div class="conditions__card-img">
+                  <svg>
+                    <use xlink:href="main/sprite/icon.svg#icon-hands"></use>
+                  </svg>
+                </div>
+                <p>
+                  Готовность основателя стартапа лично принять участие в
+                  программе
+                </p>
               </div>
-              <p>
-                Готовность основателя стартапа лично принять участие в программе
-              </p>
+              <div class="conditions__card-back"></div>
             </div>
-            <div class="conditions__card">
-              <h5>Команда<br /><br /></h5>
-              <div class="conditions__card-img">
-                <img src="main/img/icon/icon-people.png" alt="settings" />
+
+            <div class="conditions__card-wrapper d-fl">
+              <div class="conditions__card">
+                <h5>Команда <br /><br /></h5>
+                <div class="conditions__card-img">
+                  <svg>
+                    <use xlink:href="main/sprite/icon.svg#icon-people"></use>
+                  </svg>
+                </div>
+                <p>
+                  Компетентная команда, обладающая опытом создания технологий
+                  и управления бизнесом
+                </p>
               </div>
-              <p>
-                Компетентная команда, обладающая опытом создания технологий
-                и управления бизнесом
-              </p>
+              <div class="conditions__card-back"></div>
             </div>
           </div>
         </section>
@@ -631,7 +663,7 @@
           <p>Наши эксперты готовы принять любой вызов</p>
         </section>
 
-        <section class="section__request">
+        <section id="feedback" class="section__request">
           <div class="request__title d-fl"><span>Заявка</span></div>
 
           <form action="/send.php" method="POST" class="request__form">

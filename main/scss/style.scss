@@ -18,6 +18,10 @@ body {
   background-color: #d5d5d5;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // ---------Переменные-----------
 // Dark Blue
 $colorDark: #1e1e1e;
@@ -114,14 +118,17 @@ $fontArial: "Arial";
   -o-transition: 0.3s;
 
   &:hover {
-    color: $colorOrange;
+    color: #ffffff;
+    background-color: $colorOrange;
     border: rem(2) solid $colorOrange;
   }
 
   &:active {
-    color: #ffffff;
-    background-color: $colorOrange;
-    border: rem(2) solid $colorOrange;
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
   }
 }
 
@@ -486,7 +493,7 @@ $fontArial: "Arial";
     height: 100%;
     width: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
     top: 0;
     left: 0;
@@ -734,8 +741,51 @@ $fontArial: "Arial";
     grid-template-columns: repeat(auto-fit, minmax(rem(180), 1fr));
   }
 }
-.conditions__card {
+
+.conditions__card-wrapper {
+  position: relative;
+
+  &:hover > .conditions__card-back {
+    top: rem(10);
+    left: rem(-10);
+  }
+
+  &:hover > .conditions__card {
+    h5,
+    p {
+      color: $colorOrange;
+    }
+  }
+
+  &:hover > .conditions__card > .conditions__card-img {
+    svg {
+      fill: white;
+    }
+  }
+
+  // &:nth-child(5):hover > .conditions__card-back {
+  //   top: rem(10);
+  //   left: rem(-10);
+  // }
+}
+
+.conditions__card-back {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: $colorOrange;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.conditions__card {
+  background-color: #cbcbcb;
   position: relative;
   z-index: 0;
   padding: rem(20) rem(25) rem(25) clamp(rem(20), 2.08vw, rem(40));
@@ -744,6 +794,11 @@ $fontArial: "Arial";
   p {
     color: #000000;
     font-weight: 400;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
   }
 
   h5 {
@@ -767,51 +822,6 @@ $fontArial: "Arial";
     font-size: clamp(rem(16), 1.25vw, rem(24));
     line-height: clamp(rem(18), 1.46vw, rem(28));
   }
-
-  &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(3),
-  &:nth-child(4),
-  &:nth-child(5) {
-    &::before {
-      content: " ";
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 100%;
-      bottom: rem(10);
-      background-color: #cbcbcb;
-      z-index: -1;
-    }
-  }
-
-  &:nth-child(1),
-  &:nth-child(2) {
-    &::before {
-      left: rem(10);
-    }
-  }
-
-  &:nth-child(3) {
-    &::before {
-      left: 0;
-
-      @media (max-width: 1260px) {
-        left: rem(10);
-      }
-    }
-  }
-
-  &:nth-child(4),
-  &:nth-child(5) {
-    &::before {
-      right: rem(10);
-
-      @media (max-width: 1260px) {
-        left: rem(10);
-      }
-    }
-  }
 }
 
 .conditions__card-img {
@@ -819,10 +829,16 @@ $fontArial: "Arial";
   height: clamp(rem(40), 3.85vw, rem(74));
   margin: 0 auto;
 
-  img {
+  svg {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    fill: black;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
   }
 }
 /*------------------CONDITIONS------------------*/
