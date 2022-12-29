@@ -313,12 +313,6 @@ $fontArial: "Arial";
     max-height: rem(40);
   }
 
-  &:hover {
-    svg {
-      fill: $colorOrange;
-    }
-  }
-
   svg {
     position: absolute;
     top: 0;
@@ -331,6 +325,12 @@ $fontArial: "Arial";
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
+  }
+
+  &:hover {
+    svg {
+      fill: $colorOrange;
+    }
   }
 }
 

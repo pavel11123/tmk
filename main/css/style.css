@@ -366,9 +366,6 @@ html {
     max-height: 2.5rem;
   }
 }
-.header__logo:hover svg {
-  fill: #dd6f2d;
-}
 .header__logo svg {
   position: absolute;
   top: 0;
@@ -381,6 +378,9 @@ html {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+}
+.header__logo:hover svg {
+  fill: #dd6f2d;
 }
 
 .header-right {
