@@ -1947,14 +1947,22 @@ $fontArial: "Arial";
 /*------------------FOOTER------------------*/
 .footer {
   background-color: #000000;
-  padding: rem(85) rem(80) rem(100) rem(80);
-  // display: none;
+  padding: adaptiv-num-rem(20, 85, 1920, 360) adaptiv-num-rem(15, 80, 1920, 360)
+    adaptiv-num-rem(40, 100, 1920, 360) adaptiv-num-rem(15, 80, 1920, 360);
 }
 
 .footer-top {
   & > .header-right {
     align-self: flex-start;
     margin: 0 auto;
+  }
+
+  @media (max-width: 940px) {
+    justify-content: space-between;
+
+    & > .header-right {
+      display: none;
+    }
   }
 }
 
@@ -1963,17 +1971,24 @@ $fontArial: "Arial";
   text-align: center;
   gap: rem(30);
   padding-bottom: adaptiv-num-rem(40, 135, 1920, 360);
+
   span,
   a {
     font-family: $fontEurope;
     font-weight: 400;
-    font-size: rem(24);
-    line-height: rem(28);
+    font-size: adaptiv-num-rem(20, 24, 1920, 360);
+    line-height: adaptiv-num-rem(24, 28, 1920, 360);
     color: #ffffff;
   }
 
   span {
     text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    order: 1;
+    padding-bottom: 0;
+    padding-top: adaptiv-num-rem(40, 135, 1920, 360);
   }
 }
 
@@ -1992,8 +2007,8 @@ $fontArial: "Arial";
     span {
       font-family: $fontEurope;
       font-weight: 400;
-      font-size: rem(24);
-      line-height: rem(28);
+      font-size: adaptiv-num-rem(14, 24, 1920, 360);
+      line-height: adaptiv-num-rem(20, 28, 1920, 360);
       color: #7a7a7a;
     }
 
@@ -2011,13 +2026,19 @@ $fontArial: "Arial";
   &-right {
     font-family: $fontEurope;
     font-weight: 400;
-    font-size: rem(24);
-    line-height: rem(28);
+    font-size: adaptiv-num-rem(14, 24, 1920, 360);
+    line-height: adaptiv-num-rem(20, 28, 1920, 360);
     color: #7a7a7a;
     text-align: center;
+    white-space: nowrap;
 
     @media (max-width: 600px) {
       order: 3;
+      & > a {
+        br {
+          display: none;
+        }
+      }
     }
   }
 }

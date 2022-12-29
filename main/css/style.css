@@ -1916,12 +1916,32 @@ html {
 /*------------------FOOTER------------------*/
 .footer {
   background-color: #000000;
-  padding: 5.3125rem 5rem 6.25rem 5rem;
+  padding: calc(
+    1.25rem + (85 - 20) * ((100vw - 360px) /
+          (1920 - 360))
+  ) calc(
+    0.9375rem + (80 - 15) * ((100vw - 360px) /
+          (1920 - 360))
+  ) calc(
+    2.5rem + (100 - 40) * ((100vw - 360px) /
+          (1920 - 360))
+  ) calc(
+    0.9375rem + (80 - 15) * ((100vw - 360px) /
+          (1920 - 360))
+  );
 }
 
 .footer-top > .header-right {
   align-self: flex-start;
   margin: 0 auto;
+}
+@media (max-width: 940px) {
+  .footer-top {
+    justify-content: space-between;
+  }
+  .footer-top > .header-right {
+    display: none;
+  }
 }
 
 .footer-center {
@@ -1937,12 +1957,28 @@ html {
 .footer-center a {
   font-family: "EuropeC";
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: calc(
+    1.25rem + (24 - 20) * ((100vw - 360px) /
+          (1920 - 360))
+  );
+  line-height: calc(
+    1.5rem + (28 - 24) * ((100vw - 360px) /
+          (1920 - 360))
+  );
   color: #ffffff;
 }
 .footer-center span {
   text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .footer-center {
+    order: 1;
+    padding-bottom: 0;
+    padding-top: calc(
+    2.5rem + (135 - 40) * ((100vw - 360px) /
+          (1920 - 360))
+  );
+  }
 }
 
 .footer__bottom {
@@ -1960,8 +1996,14 @@ html {
 .footer__bottom-left span {
   font-family: "EuropeC";
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: calc(
+    0.875rem + (24 - 14) * ((100vw - 360px) /
+          (1920 - 360))
+  );
+  line-height: calc(
+    1.25rem + (28 - 20) * ((100vw - 360px) /
+          (1920 - 360))
+  );
   color: #7a7a7a;
 }
 @media (max-width: 600px) {
@@ -1977,14 +2019,24 @@ html {
 .footer__bottom-right {
   font-family: "EuropeC";
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: calc(
+    0.875rem + (24 - 14) * ((100vw - 360px) /
+          (1920 - 360))
+  );
+  line-height: calc(
+    1.25rem + (28 - 20) * ((100vw - 360px) /
+          (1920 - 360))
+  );
   color: #7a7a7a;
   text-align: center;
+  white-space: nowrap;
 }
 @media (max-width: 600px) {
   .footer__bottom-right {
     order: 3;
+  }
+  .footer__bottom-right > a br {
+    display: none;
   }
 }
 
