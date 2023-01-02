@@ -496,7 +496,7 @@ $fontArial: "Arial", "sans-serif";
   min-height: 100vh;
   padding-top: rem(110);
   padding-bottom: rem(110);
-  // background-image: url("../../main/img/background/backgroundStart.png");
+  // background-image: url("../../main/img/background/backgroundStart.webp");
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: center;
@@ -689,7 +689,7 @@ $fontArial: "Arial", "sans-serif";
 }
 .offers__description {
   margin-top: rem(75);
-  background-image: url("../../main/img/background/offers.png");
+  background-image: url("../../main/img/background/offers.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1040,7 +1040,7 @@ $fontArial: "Arial", "sans-serif";
 
 .stages__block-wrapper {
   margin-top: rem(75);
-  background-image: url("../../main/img/background/stages.png");
+  background-image: url("../../main/img/background/stages.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1048,7 +1048,7 @@ $fontArial: "Arial", "sans-serif";
 
   @media (max-width: 529px) {
     padding: rem(40) rem(20);
-    background-image: url("../../main/img/background/stages-mobile.png");
+    background-image: url("../../main/img/background/stages-mobile.webp");
   }
 }
 

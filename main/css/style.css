@@ -748,7 +748,7 @@ html {
 /*------------------OFFERS------------------*/
 .offers__description {
   margin-top: 4.6875rem;
-  background-image: url("../../main/img/background/offers.png");
+  background-image: url("../../main/img/background/offers.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1076,7 +1076,7 @@ html {
 /*------------------STAGES------------------*/
 .stages__block-wrapper {
   margin-top: 4.6875rem;
-  background-image: url("../../main/img/background/stages.png");
+  background-image: url("../../main/img/background/stages.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1085,7 +1085,7 @@ html {
 @media (max-width: 529px) {
   .stages__block-wrapper {
     padding: 2.5rem 1.25rem;
-    background-image: url("../../main/img/background/stages-mobile.png");
+    background-image: url("../../main/img/background/stages-mobile.webp");
   }
 }
 
