@@ -337,6 +337,16 @@ $fontArial: "Arial";
 .header-right {
   align-self: flex-start;
   align-items: center;
+  flex: 1 1 auto;
+  padding: 0 adaptiv-num-rem(0, 65, 1920, 940) 0
+    adaptiv-num-rem(0, 145, 1920, 940);
+  @media (max-width: 940px) {
+    display: none;
+  }
+}
+
+.header__btn {
+  align-self: flex-start;
 }
 
 .header__nav {
@@ -419,9 +429,8 @@ $fontArial: "Arial";
 }
 
 .header__accelerator {
-  margin-left: clamp(rem(15), 3.13vw, rem(60));
   @media (max-width: 940px) {
-    margin-left: 0;
+    display: none;
   }
 }
 
