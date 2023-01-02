@@ -526,6 +526,7 @@ html {
 .header__mobile-wrapper {
   height: 100%;
   padding: 1.5625rem;
+  position: relative;
 }
 
 .header__nav-mobile {
