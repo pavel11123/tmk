@@ -532,6 +532,7 @@ html {
   flex: 1 1 auto;
   align-items: center;
   justify-content: center;
+  margin-left: 2.8125rem;
 }
 .header__nav-mobile ul {
   gap: 1.5625rem;
@@ -549,6 +550,9 @@ html {
   flex: 0 0 auto;
   gap: 1.25rem;
   justify-content: space-between;
+}
+.header__nav-mobile-bottom > .header__accelerator {
+  display: block;
 }
 
 /*------------------HEADER------------------*/
