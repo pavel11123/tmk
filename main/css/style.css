@@ -1946,8 +1946,9 @@ html {
 }
 
 .footer-top > .header-right {
+  padding: 0;
+  justify-content: center;
   align-self: flex-start;
-  margin: 0 auto;
 }
 @media (max-width: 940px) {
   .footer-top {
