@@ -88,6 +88,34 @@ hr {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "EuropeC";
+  src: url("../fonts/europec/europec.woff2") format("woff2"), url("../fonts/europec/europec.woff") format("woff"), url("../fonts/europec/europec.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "EuropeC";
+  src: url("../fonts/europec/europec-bold.woff2") format("woff2"), url("../fonts/europec/europec-bold.woff") format("woff"), url("../fonts/europec/europec-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial/arial.woff2") format("woff2"), url("../fonts/arial/arial.woff") format("woff"), url("../fonts/arial/arial.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/arial/arial-bold.woff2") format("woff2"), url("../fonts/arial/arial-bold.woff") format("woff"), url("../fonts/arial/arial-bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 @media (min-width: 1921px) {
   html {
     font-size: 0.8328995315vw;
@@ -136,7 +164,7 @@ html {
 .accelerator__btn {
   display: block;
   align-self: flex-start;
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(0.9375rem, 1.25vw, 1.5rem);
   line-height: clamp(1.1875rem, 1.46vw, 1.75rem);
@@ -152,7 +180,7 @@ html {
 
 .request__link {
   display: none;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.75rem;
@@ -162,7 +190,7 @@ html {
 .request__btn {
   display: block;
   align-self: center;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1.25rem, 2.08vw, 2.5rem);
   line-height: clamp(1.4375rem, 2.4vw, 2.875rem);
@@ -197,7 +225,7 @@ html {
 }
 
 .title__section {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(1.25rem, 2.5vw, 3rem);
   line-height: clamp(1.5rem, 2.97vw, 3.5625rem);
@@ -233,7 +261,7 @@ html {
 }
 
 .start__btn {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: 1rem;
   line-height: 110%;
@@ -427,7 +455,7 @@ html {
   -o-transition: 0.3s;
 }
 .header__nav ul li a {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(0.75rem, 1.25vw, 1.5rem);
   line-height: clamp(1rem, 1.46vw, 1.75rem);
@@ -509,7 +537,7 @@ html {
   gap: 1.5625rem;
 }
 .header__nav-mobile ul li {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
@@ -574,13 +602,13 @@ html {
   text-align: center;
 }
 .start__title h1 {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-size: clamp(1.5rem, 3.33vw, 4rem);
   line-height: clamp(1.75rem, 3.96vw, 4.75rem);
   color: #ffffff;
 }
 .start__title h4 {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-size: clamp(0.8125rem, 1.67vw, 2rem);
   line-height: clamp(0.9375rem, 1.93vw, 2.3125rem);
   letter-spacing: 0.19em;
@@ -612,7 +640,7 @@ html {
 }
 
 .about__info-title {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1.25rem, 1.25vw, 1.5rem);
   line-height: clamp(1.4375rem, 1.46vw, 1.75rem);
@@ -621,7 +649,7 @@ html {
   align-items: center;
 }
 .about__info-title span {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1.25rem, 3.33vw, 4rem);
@@ -679,7 +707,7 @@ html {
   max-width: 19.6875rem;
 }
 .about__card span {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1.5rem, 3.33vw, 4rem);
@@ -687,7 +715,7 @@ html {
   color: #dd6f2d;
 }
 .about__card p {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
@@ -738,7 +766,7 @@ html {
   }
 }
 .offers__description-block p {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1.25rem, 1.67vw, 2rem);
@@ -856,7 +884,7 @@ html {
   -o-transition: 0.3s;
 }
 .conditions__card h5 {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-size: clamp(1.25rem, 2.08vw, 2.5rem);
   line-height: clamp(1.4375rem, 2.45vw, 2.9375rem);
   text-align: center;
@@ -872,7 +900,7 @@ html {
 }
 .conditions__card p {
   padding-top: 1.5625rem;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
 }
@@ -961,7 +989,7 @@ html {
   transform: translate(-50%, -50%);
   margin: auto;
   text-align: center;
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(1.25rem, 2.6vw, 3.125rem);
   line-height: clamp(1.5rem, 3.07vw, 3.6875rem);
@@ -1028,7 +1056,7 @@ html {
 }
 .search__block-list li {
   display: flex;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.67vw, 2rem);
   line-height: clamp(1.25rem, 2.76vw, 3.3125rem);
@@ -1078,7 +1106,7 @@ html {
 
 .stages__card h6 {
   padding-top: 2.875rem;
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.67vw, 1.5625rem) 2rem;
   line-height: clamp(1.1875rem, 1.98vw, 1.5625rem) 2.375rem;
@@ -1181,7 +1209,7 @@ html {
   padding: 4.375rem 0 clamp(5.625rem, 7.81vw, 9.375rem) 0;
 }
 .section__team p {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 2.08vw, 2.5rem);
   line-height: clamp(1.125rem, 2.4vw, 2.875rem);
@@ -1252,7 +1280,7 @@ html {
 }
 .slier__description h6,
 .slier__description span {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   max-width: 22.8125rem;
   width: 100%;
@@ -1337,7 +1365,7 @@ html {
   align-items: center;
 }
 .request__title span {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1.25rem, 3.33vw, 4rem);
@@ -1360,7 +1388,7 @@ html {
 }
 .request__form p {
   padding: clamp(1.5625rem, 7.29vw, 8.75rem) 0 5rem 0;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1410,7 +1438,7 @@ html {
 }
 
 .label__form {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1430,7 +1458,7 @@ html {
   width: 100%;
   background: none;
   border-bottom: 0.125rem solid #000000;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1508,7 +1536,7 @@ html {
 
 .download__btn {
   display: block;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1543,7 +1571,7 @@ html {
 
 .input__file-description {
   display: block;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1568,7 +1596,7 @@ html {
 }
 
 .input__file-button--text {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
   line-height: clamp(1.125rem, 1.46vw, 1.75rem);
@@ -1629,7 +1657,7 @@ html {
 }
 
 .radio-label {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: clamp(1rem, 1.25vw, 1.5rem);
@@ -1650,7 +1678,7 @@ html {
 .submit__form {
   background: #dd6f2d;
   box-shadow: 0.25rem 0.25rem 0.25rem 0.125rem rgba(0, 0, 0, 0.3);
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: clamp(1.25rem, 2.5vw, 3rem);
   line-height: clamp(1.5rem, 2.97vw, 3.5625rem);
@@ -1670,7 +1698,7 @@ html {
 
 .question__block h3,
 .question__block p {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   display: flex;
   position: relative;
 }
@@ -1741,7 +1769,7 @@ html {
 }
 
 .partners__title {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-size: clamp(1.25rem, 2.5vw, 3rem);
   line-height: clamp(1.4375rem, 2.86vw, 3.4375rem);
   color: #808080;
@@ -1868,7 +1896,7 @@ html {
 }
 .news__card span,
 .news__card h6 {
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   color: #1e1e1e;
 }
@@ -1892,7 +1920,7 @@ html {
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-family: "Arial";
+  font-family: "Arial", "sans-serif";
   font-weight: 400;
   font-size: clamp(1rem, 1.04vw, 1.25rem);
   line-height: clamp(1.125rem, 1.2vw, 1.4375rem);
@@ -1970,7 +1998,7 @@ html {
 }
 .footer-center span,
 .footer-center a {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: calc(
     1.25rem + (24 - 20) * ((100vw - 360px) /
@@ -2009,7 +2037,7 @@ html {
   }
 }
 .footer__bottom-left span {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: calc(
     0.875rem + (24 - 14) * ((100vw - 360px) /
@@ -2032,7 +2060,7 @@ html {
   }
 }
 .footer__bottom-right {
-  font-family: "EuropeC";
+  font-family: "EuropeC", "sans-serif";
   font-weight: 400;
   font-size: calc(
     0.875rem + (24 - 14) * ((100vw - 360px) /
