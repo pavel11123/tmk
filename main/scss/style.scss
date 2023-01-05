@@ -2033,8 +2033,10 @@ $fontArial: "Arial", "sans-serif";
   position: relative;
   gap: rem(30);
 
-  @media (max-width: 600px) {
+  @media (max-width: 730px) {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   &-left {

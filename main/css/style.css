@@ -2056,9 +2056,11 @@ html {
   position: relative;
   gap: 1.875rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 730px) {
   .footer__bottom {
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
 .footer__bottom-left span {

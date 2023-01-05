@@ -707,39 +707,41 @@
           <div class="request__title d-fl"><span>Заявка</span></div>
 
           <form
-            action="/send.php"
-            method="POST"
             class="request__form start__block-animation"
+            id="ajax-contact-form"
+            enctype="multipart/form-data"
+            method="post"
           >
             <p class="form__info-description">
               обязательные для заполнения поля
             </p>
+
             <div class="request__form-wrapper d-fl-col">
               <div class="request__form-flex d-fl-wrap">
                 <div class="input__item">
                   <input
                     class="input__form"
                     type="text"
-                    name="name"
-                    id="name"
+                    name="nameFF"
+                    id="nameFF"
                     required
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="name">ФИО</label>
+                  <label class="label__form" for="nameFF">ФИО</label>
                 </div>
 
                 <div class="input__item">
                   <input
                     class="input__form"
-                    type="text"
-                    name="phone"
-                    id="phone"
+                    type="tel"
+                    name="telFF"
+                    id="telFF"
                     required
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="phone">Телефон</label>
+                  <label class="label__form" for="telFF">Телефон</label>
                 </div>
               </div>
 
@@ -747,14 +749,14 @@
                 <div class="input__item">
                   <input
                     class="input__form"
-                    type="text"
-                    name="email"
-                    id="email"
+                    type="email"
+                    name="contactFF"
+                    id="contactFF"
                     required
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="email"
+                  <label class="label__form" for="contactFF"
                     >Электронная почта</label
                   >
                 </div>
@@ -763,12 +765,12 @@
                   <input
                     class="input__form"
                     type="text"
-                    name="company"
-                    id="company"
+                    name="companyFF"
+                    id="companyFF"
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="company"
+                  <label class="label__form" for="companyFF"
                     >Полное название юр. лица</label
                   >
                 </div>
@@ -779,24 +781,24 @@
                   <input
                     class="input__form"
                     type="text"
-                    name="tin"
-                    id="tin"
+                    name="tinFF"
+                    id="tinFF"
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="tin">ИНН</label>
+                  <label class="label__form" for="tinFF">ИНН</label>
                 </div>
 
                 <div class="input__item">
                   <input
                     class="input__form"
                     type="text"
-                    name="project"
-                    id="project"
+                    name="projectFF"
+                    id="projectFF"
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="project"
+                  <label class="label__form" for="projectFF"
                     >Название проекта</label
                   >
                 </div>
@@ -807,12 +809,12 @@
                   <input
                     class="input__form"
                     type="text"
-                    name="investments"
-                    id="investments"
+                    name="investmentsFF"
+                    id="investmentsFF"
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="investments"
+                  <label class="label__form" for="investmentsFF"
                     >Потребность в инвестициях (руб.)</label
                   >
                 </div>
@@ -821,26 +823,27 @@
                   <input
                     class="input__form"
                     type="text"
-                    name="description"
-                    id="description"
+                    name="descriptionFF"
+                    id="descriptionFF"
                     autocomplete="off"
                     placeholder=" "
                   />
-                  <label class="label__form" for="description"
+                  <label class="label__form" for="descriptionFF"
                     >Описание проекта</label
                   >
                 </div>
               </div>
+
               <div class="input__item-last">
                 <input
                   class="input__form"
                   type="text"
-                  name="busines"
-                  id="busines"
+                  name="businesFF"
+                  id="businesFF"
                   autocomplete="off"
                   placeholder=" "
                 />
-                <label class="label__form" for="busines"
+                <label class="label__form" for="businesFF"
                   >Описание потенциального эффекта для бизнеса ТМК</label
                 >
               </div>
@@ -866,14 +869,14 @@
                   >Загрузите презентацию своего проекта:</span
                 >
                 <input
-                  name="file"
+                  name="fileFF"
                   type="file"
-                  id="input__file"
+                  id="fileFF"
                   class="input input__file"
                   multiple
                 />
                 <label
-                  for="input__file"
+                  for="fileFF"
                   class="input__file-button btn__animation-orange"
                 >
                   <span class="input__file-button--text">Загрузить файл</span>
@@ -912,7 +915,9 @@
               </div>
             </div>
 
-            <input type="submit" value="Отправить" class="submit__form" />
+            <button class="submit__form" type="submit" id="submitFF">
+              Отправить
+            </button>
           </form>
         </section>
 
@@ -1119,9 +1124,10 @@
     </div>
 
     <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
 
     <script
