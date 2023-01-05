@@ -70,12 +70,8 @@ const menu = () => {
     phoneBodyScroll.style.overflow = "hidden";
   }
 
-  const headerLink = document.querySelectorAll(".header__nav-link");
-  const menuBtnClose = document.querySelectorAll(".header__mobile-btn--close");
+  const menuBtnClose = document.querySelectorAll(".menu__close");
 
-  headerLink.forEach((element) => {
-    element.addEventListener("click", closeMenu);
-  });
   menuBtnClose.forEach((element) => {
     element.addEventListener("click", closeMenu);
   });

@@ -719,8 +719,8 @@ $fontArial: "Arial", "sans-serif";
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: clamp(rem(65), 19.27vw, rem(370)) clamp(rem(28), 12.5vw, rem(240))
-    clamp(rem(30), 10.94vw, rem(210)) clamp(rem(28), 14.58vw, rem(280));
+  padding: clamp(rem(55), 7.81vw, rem(150)) clamp(rem(28), 12.5vw, rem(240))
+    clamp(rem(55), 7.81vw, rem(150)) clamp(rem(28), 14.58vw, rem(280));
   gap: clamp(rem(55), 5.73vw, rem(110));
 }
 
@@ -928,6 +928,10 @@ $fontArial: "Arial", "sans-serif";
   @media (max-width: 780px) {
     gap: clamp(rem(30), 8.33vw, rem(65));
   }
+
+  &:nth-child(even) > .search__block-img {
+    box-shadow: rem(-4) rem(4) rem(4) rem(2) rgba(0, 0, 0, 0.3);
+  }
 }
 
 .search__block--reverse {
@@ -984,6 +988,55 @@ $fontArial: "Arial", "sans-serif";
 
   @media (max-width: 780px) {
     max-width: 100%;
+  }
+
+  &:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    -webkit-animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    -o-transform: translateX(-3px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(3px);
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    -o-transform: translateX(3px);
+  }
+
+  80% {
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
+  }
+
+  90% {
+    transform: translateX(-2px);
+    -webkit-transform: translateX(-2px);
+    -moz-transform: translateX(-2px);
+    -ms-transform: translateX(-2px);
+    -o-transform: translateX(-2px);
   }
 }
 
@@ -1244,7 +1297,6 @@ $fontArial: "Arial", "sans-serif";
     border: rem(2) solid $colorOrange;
 
     img {
-      margin: rem(10);
       position: absolute;
       top: 0;
       right: 0;
