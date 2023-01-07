@@ -88,9 +88,48 @@ $fontArial: "Arial", "sans-serif";
   display: none;
   font-family: $fontArial;
   font-weight: 400;
-  font-size: rem(24);
-  line-height: rem(28);
+  font-size: clamp(rem(16), 1.25vw, rem(24));
+  line-height: clamp(rem(20), 1.46vw, rem(28));
   color: $colorOrange;
+  position: relative;
+
+  @media (max-width: 940px) {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: rem(-5);
+    display: block;
+    width: 0;
+    height: rem(2);
+    background-color: $colorOrange;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  &::after {
+    left: 50%;
+  }
+
+  &::before {
+    right: 50%;
+  }
+
+  &:hover {
+    color: $colorOrange;
+
+    &::after,
+    &::before {
+      width: 50%;
+    }
+  }
 }
 
 .request__btn {
@@ -319,6 +358,59 @@ $fontArial: "Arial", "sans-serif";
   padding: clamp(rem(20), 2.08vw, rem(40)) clamp(rem(15), 3.65vw, rem(70));
   gap: clamp(rem(15), 1.04vw, rem(20));
   align-items: center;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+
+  &-scrolled {
+    position: fixed;
+    background-color: #e4e4e4;
+    padding: rem(10) clamp(rem(15), 3.65vw, rem(70));
+
+    @media (max-width: 940px) {
+      background-color: #000000;
+    }
+
+    & > .header__logo {
+      padding: 0;
+      width: rem(55);
+      height: rem(55);
+
+      svg {
+        fill: #000000;
+
+        @media (max-width: 940px) {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    & > .header-right {
+      align-self: center;
+    }
+
+    & > .header-right ul li a {
+      color: #000000;
+    }
+
+    & > .header-right .header__line {
+      display: none;
+    }
+
+    & > .header__btn > .accelerator__btn {
+      display: none;
+    }
+
+    & > .header__btn {
+      align-self: center;
+    }
+
+    & > .header__btn > .request__link {
+      display: block;
+    }
+  }
 }
 .d-fl {
 }

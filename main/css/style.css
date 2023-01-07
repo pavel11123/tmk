@@ -182,9 +182,42 @@ html {
   display: none;
   font-family: "Arial", "sans-serif";
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+  line-height: clamp(1.25rem, 1.46vw, 1.75rem);
   color: #dd6f2d;
+  position: relative;
+}
+@media (max-width: 940px) {
+  .request__link {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+.request__link::after, .request__link::before {
+  content: "";
+  position: absolute;
+  bottom: -0.3125rem;
+  display: block;
+  width: 0;
+  height: 0.125rem;
+  background-color: #dd6f2d;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.request__link::after {
+  left: 50%;
+}
+.request__link::before {
+  right: 50%;
+}
+.request__link:hover {
+  color: #dd6f2d;
+}
+.request__link:hover::after, .request__link:hover::before {
+  width: 50%;
 }
 
 .request__btn {
@@ -401,6 +434,52 @@ html {
   padding: clamp(1.25rem, 2.08vw, 2.5rem) clamp(0.9375rem, 3.65vw, 4.375rem);
   gap: clamp(0.9375rem, 1.04vw, 1.25rem);
   align-items: center;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -ms-transition: 0.15s;
+  -o-transition: 0.15s;
+}
+.header-scrolled {
+  position: fixed;
+  background-color: #e4e4e4;
+  padding: 0.625rem clamp(0.9375rem, 3.65vw, 4.375rem);
+}
+@media (max-width: 940px) {
+  .header-scrolled {
+    background-color: #000000;
+  }
+}
+.header-scrolled > .header__logo {
+  padding: 0;
+  width: 3.4375rem;
+  height: 3.4375rem;
+}
+.header-scrolled > .header__logo svg {
+  fill: #000000;
+}
+@media (max-width: 940px) {
+  .header-scrolled > .header__logo svg {
+    fill: #ffffff;
+  }
+}
+.header-scrolled > .header-right {
+  align-self: center;
+}
+.header-scrolled > .header-right ul li a {
+  color: #000000;
+}
+.header-scrolled > .header-right .header__line {
+  display: none;
+}
+.header-scrolled > .header__btn > .accelerator__btn {
+  display: none;
+}
+.header-scrolled > .header__btn {
+  align-self: center;
+}
+.header-scrolled > .header__btn > .request__link {
+  display: block;
 }
 
 .header__logo {

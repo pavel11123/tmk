@@ -31,7 +31,6 @@ const slider = () => {
     });
   });
 };
-
 slider();
 
 const labelRequired = () => {
@@ -86,6 +85,15 @@ const menu = () => {
   }
 };
 menu();
+
+const menuScrolled = () => {
+  if (window.scrollY > 100) {
+    document.querySelector("#header").classList.add("header-scrolled");
+  } else {
+    document.querySelector("#header").classList.remove("header-scrolled");
+  }
+};
+window.addEventListener("scroll", menuScrolled);
 
 const animation = () => {
   function onEntry(entry) {
