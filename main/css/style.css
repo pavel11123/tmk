@@ -1613,6 +1613,11 @@ html {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 940px) {
+  .input__item-last > .label__form {
+    text-align: left;
+  }
+}
 @media (max-width: 850px) {
   .input__item-last {
     width: 100%;

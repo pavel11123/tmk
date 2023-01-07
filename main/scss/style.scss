@@ -1588,6 +1588,10 @@ $fontArial: "Arial", "sans-serif";
     & > .label__form {
       width: 100%;
       text-align: center;
+
+      @media (max-width: 940px) {
+        text-align: left;
+      }
     }
 
     @media (max-width: 850px) {
