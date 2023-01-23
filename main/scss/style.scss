@@ -111,10 +111,11 @@ $fontArial: "Arial", "sans-serif";
   border-top: rem(3) solid #fff000;
   border-right: rem(3) solid #fff000;
   border-radius: 50%;
-  animation: animateC 2s linear infinite;
+  animation: animatePreloader 2s linear infinite;
+  -webkit-animation: animatePreloader 2s linear infinite;
 }
 
-span {
+.preloader__rotate {
   display: block;
   position: absolute;
   top: calc(50% - 2px);
@@ -123,10 +124,11 @@ span {
   height: rem(4);
   background: transparent;
   transform-origin: left;
-  animation: animate 2s linear infinite;
+  animation: animatePreloader2 2s linear infinite;
+  -webkit-animation: animatePreloader2 2s linear infinite;
 }
 
-span:before {
+.preloader__rotate:before {
   content: "";
   position: absolute;
   width: rem(16);
@@ -138,7 +140,7 @@ span:before {
   box-shadow: 0 0 rem(20) #fff000;
 }
 
-@keyframes animateC {
+@keyframes animatePreloader {
   0% {
     transform: rotate(0deg);
   }
@@ -148,7 +150,7 @@ span:before {
   }
 }
 
-@keyframes animate {
+@keyframes animatePreloader2 {
   0% {
     transform: rotate(45deg);
   }

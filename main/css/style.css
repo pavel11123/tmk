@@ -204,11 +204,11 @@ html {
   border-top: 0.1875rem solid #fff000;
   border-right: 0.1875rem solid #fff000;
   border-radius: 50%;
-  -webkit-animation: animateC 2s linear infinite;
-          animation: animateC 2s linear infinite;
+  animation: animatePreloader 2s linear infinite;
+  -webkit-animation: animatePreloader 2s linear infinite;
 }
 
-span {
+.preloader__rotate {
   display: block;
   position: absolute;
   top: calc(50% - 2px);
@@ -217,11 +217,11 @@ span {
   height: 0.25rem;
   background: transparent;
   transform-origin: left;
-  -webkit-animation: animate 2s linear infinite;
-          animation: animate 2s linear infinite;
+  animation: animatePreloader2 2s linear infinite;
+  -webkit-animation: animatePreloader2 2s linear infinite;
 }
 
-span:before {
+.preloader__rotate:before {
   content: "";
   position: absolute;
   width: 1rem;
@@ -233,7 +233,7 @@ span:before {
   box-shadow: 0 0 1.25rem #fff000;
 }
 
-@-webkit-keyframes animateC {
+@-webkit-keyframes animatePreloader {
   0% {
     transform: rotate(0deg);
   }
@@ -242,7 +242,7 @@ span:before {
   }
 }
 
-@keyframes animateC {
+@keyframes animatePreloader {
   0% {
     transform: rotate(0deg);
   }
@@ -250,7 +250,7 @@ span:before {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes animate {
+@-webkit-keyframes animatePreloader2 {
   0% {
     transform: rotate(45deg);
   }
@@ -258,7 +258,7 @@ span:before {
     transform: rotate(405deg);
   }
 }
-@keyframes animate {
+@keyframes animatePreloader2 {
   0% {
     transform: rotate(45deg);
   }
