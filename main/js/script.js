@@ -1,3 +1,8 @@
+window.onload = function () {
+  let preloader = document.querySelector(".preloader");
+  preloader.style.display = "none";
+};
+
 const slider = () => {
   $(document).ready(function () {
     $(".slider").slick({
